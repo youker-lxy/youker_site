@@ -2,10 +2,11 @@
 from django.contrib.auth.models import User
 from django.db import models
 
-# Create your models here.
-
 
 # 分类
+from django.urls import reverse
+
+
 class Category(models.Model):
     name = models.CharField(max_length=50)
 
@@ -41,3 +42,8 @@ class Article(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        # 利用reverse函数，通过命名空间找到对应path，传入参数解析为具体的文章的对应url
+        # 反解析url以直接访问其它视图方法。
+        return reverse('blog:detail', kwargs={'pk', self.pk})

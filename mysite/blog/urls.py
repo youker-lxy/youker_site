@@ -11,6 +11,9 @@
 from django.urls import path
 from . import views
 
+
+app_name = 'blog'
 urlpatterns = [
     path(r'', views.index, name='index'),
+    path(r'article/(?P<pk>[0-9]+)/', views.detail, name='detial'),
 ]
