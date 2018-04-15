@@ -9,11 +9,17 @@ from django.db import models
 class Category(models.Model):
     name = models.CharField(max_length=50)
 
+    def __str__(self):
+        return self.name
+
 
 # 标签
 class Tag(models.Model):
     name = models.CharField(max_length=50)
 
+
+    def __str__(self):
+        return self.name
 
 # 文章
 class Article(models.Model):
@@ -32,3 +38,6 @@ class Article(models.Model):
     tags = models.ManyToManyField(Tag, blank=True)
     # 内置应用模型user 用于用户管理
     author = models.ForeignKey(User,on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.title
