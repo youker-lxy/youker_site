@@ -97,7 +97,7 @@
                         {% get_dates as date_list %}
                         {% for date in date_list %}
                         <li>
-                            <a href="#">{{ date.year }} 年 {{ date.month }} 月 </a>
+                            <a href="{% url 'blog:archives' date.year date.month %}">{{ date.year }} 年 {{ date.month }} 月 </a>
                         </li>
                         {% empty %}
                         暂无归档信息~~~
@@ -110,7 +110,7 @@
                         {% get_categorys as cate_list %}
                         {% for cate in cate_list %}
                         <li>
-                            <a href="#">{{ cate.name }}<span class="post-count">未实现</span></a>
+                            <a href="{% url 'blog:category' cate.pk %}">{{ cate.name }}<span class="post-count">未实现</span></a>
                         </li>
                         {% empty %}
                         暂无分类信息~~~
