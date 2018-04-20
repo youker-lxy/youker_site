@@ -4,6 +4,7 @@ from blog.models import Article
 from .forms import CommentForm
 # Create your views here.
 
+
 def post_comment(request, article_pk):
     # 先获取被评论的文章，因为后面需要把评论和被评论的文章关联起来。
     # 这里我们使用了 Django 提供的一个快捷函数 get_object_or_404，
