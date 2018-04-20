@@ -8,7 +8,7 @@ from .forms import CommentForm
 def post_comment(request, article_pk):
     # 先获取被评论的文章，因为后面需要把评论和被评论的文章关联起来。
     # 这里我们使用了 Django 提供的一个快捷函数 get_object_or_404，
-    # 这个函数的作用是当获取的文章（Post）存在时，则获取；否则返回 404 页面给用户。
+    # 这个函数的作用是当获取的文章（Article）存在时，则获取；否则返回 404 页面给用户。
     article = get_object_or_404(Article, article_pk)
 
     # HTTP 请求有 get 和 post 两种，一般用户通过表单提交数据都是通过 post 请求，
