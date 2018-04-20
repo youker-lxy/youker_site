@@ -6,7 +6,7 @@ class Comment(models.Model):
     email = models.EmailField(max_length=200)
     url = models.URLField(blank=True)
     text = models.TextField()
-    created_time = models.DateTimeField(auto_created=True)
+    created_time = models.DateTimeField(auto_now_add=True)
 
     # 外键创建的方式？
     # 指定级联删除
