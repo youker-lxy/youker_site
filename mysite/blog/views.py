@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
 from .models import Article,Category
+from ..comments.forms import CommentForm
 
 import markdown
 import pygments
@@ -28,7 +29,21 @@ def detail(request, pk):
 
     # markdown参数变动，没有extensions默认参数,映入pygenmts高亮。。重启服务器，刷新浏览器。。这是一个玄学。。。
     article.body = markdown.markdown(article.body, ['extra', 'codehilite', 'toc', ])
-    return render(request, 'blog/detail.html', context={'article': article})
+
+    # 导入表单类，便于传入模板渲染出表单
+    form = CommentForm()
+
+    # 获取这篇文章下的全部评论
+    comment_list = article.comment_set.all()
+
+    # return render(request, 'blog/detail.html', context={'article': article})
+    # 修改传递给模板的参数
+    context = {
+        'article': article,
+        'form': form,
+        'comment_list': comment_list,
+    }
+    return render(request, 'blog/detail.html', context=context)
 
 
 # 根据年月过滤文章

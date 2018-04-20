@@ -20,5 +20,7 @@ from django.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # 将应用中自定义的urls文件包含进来
     path('', include('blog.urls')),
+    path('', include('comments:urls'))
 ]
