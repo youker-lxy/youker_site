@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="154bc671-eecf-4bd9-838d-023cbff9eeec" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mysite/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/blog/views.py" afterPath="$PROJECT_DIR$/mysite/blog/views.py" />
     </list>
     <ignored path="youker_site.iws" />
@@ -91,7 +90,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+              <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -146,9 +145,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/mysite/comments/urls.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/blog/views.py" />
         <option value="$PROJECT_DIR$/mysite/comments/views.py" />
         <option value="$PROJECT_DIR$/mysite/__init__.py" />
+        <option value="$PROJECT_DIR$/mysite/blog/views.py" />
       </list>
     </option>
   </component>
@@ -882,7 +881,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <caret line="3" column="48" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
           <folding />
         </state>
       </provider>
