@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
-from ..blog.models import Article
+# from ..blog.models import Article
+from blog.models import Article
 from .forms import CommentForm
 # Create your views here.
 
