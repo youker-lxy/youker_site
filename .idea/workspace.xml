@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="154bc671-eecf-4bd9-838d-023cbff9eeec" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/blog/views.py" afterPath="$PROJECT_DIR$/mysite/blog/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysite/mysite/urls.py" afterPath="$PROJECT_DIR$/mysite/mysite/urls.py" />
     </list>
     <ignored path="youker_site.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -103,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/mysite/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -158,8 +157,8 @@
         <option value="$PROJECT_DIR$/mysite/templates/blog/detail.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/mysite/comments/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/blog/views.py" />
         <option value="$PROJECT_DIR$/mysite/mysite/urls.py" />
+        <option value="$PROJECT_DIR$/mysite/blog/views.py" />
       </list>
     </option>
   </component>
@@ -929,7 +928,7 @@
     <entry file="file://$PROJECT_DIR$/mysite/blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
           <folding />
         </state>
       </provider>
