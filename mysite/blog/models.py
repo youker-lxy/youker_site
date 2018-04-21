@@ -47,3 +47,6 @@ class Article(models.Model):
         # 利用reverse函数，通过命名空间找到对应path，传入参数解析为具体的文章的对应url
         # 反解析url以直接访问其它视图方法。
         return reverse('blog:detail', kwargs={'pk': self.pk})
+
+    class Meta:
+        ordering = ['-created_time']
